@@ -1,7 +1,7 @@
 from g4f.client import Client
 from balethon import Client
-
-bot = Clinet('539085084:P0PBlUGkLQUUMlj5luSYfbBFsO8Ylgq-1Vw')
+import os
+bot = Clinet(os.getenv("BALE_TOKEN"))
 @bot.on_message()
 async def botgetmesage(piam):
 client = Client()
